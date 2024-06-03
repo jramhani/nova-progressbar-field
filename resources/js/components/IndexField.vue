@@ -56,7 +56,11 @@
                     trailColor: '#E5E4F0',
                     trailWidth: 4,
 
-                    svgStyle: null,
+                    svgStyle: {
+                        width: '100%',
+                        borderRadius: '20px',
+                        overflow: 'hidden', // Essential for making the corners visible
+                    },
                     text: {
                         style: {
                             color: '#999',
@@ -92,5 +96,7 @@
     .pg-bar {
         max-width: 400px;
         width: 100%;
+        overflow: hidden; /* Ensures the rounded corners are visible */
+        border-radius: 20px; /* This should match the SVG border-radius for consistency */
     }
 </style>
